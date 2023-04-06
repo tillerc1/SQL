@@ -1,0 +1,23 @@
+CREATE TABLE Products (ID integer PRIMARY KEY, "name" text, quantity integer, cost REAL, price REAL);
+
+INSERT into Products VALUES (1, "T-shirt", 3, 8, 15.50);
+INSERT into Products VALUES (2, "Jeans", 8, 12, 25);
+INSERT into Products VALUES (3, "Sweatpants", 4, 11, 16);
+INSERT into Products VALUES (4, "Sweatshirt", 8, 12, 20);
+INSERT into Products VALUES (5, "Socks", 11, 2, 8);
+INSERT into Products VALUES (6, "Shorts", 7, 8, 12);
+INSERT into Products VALUES (7, "Long-Sleeve Shirt", 7, 8, 17.50);
+INSERT into Products VALUES (8, "Hats", 9, 6, 15);
+INSERT into Products VALUES (9, "Shoes", 20, 22, 40);
+INSERT into Products VALUES (10, "Jackets", 10, 20, 35);
+INSERT into Products VALUES (11, "Windbreakers", 5, 18, 30);
+INSERT into Products VALUES (12, "Quarter-Zip", 12, 22, 40);
+INSERT into Products VALUES (13, "Gloves", 8, 12, 15);
+INSERT into Products VALUES (14, "Parkas", 12, 30, 60);
+INSERT into Products VALUES (15, "Bucket Hats", 8, 9, 15);
+
+SELECT name, cost, price, quantity FROM Products ORDER BY price;
+
+/** What Products are low in inventory? **/
+SELECT * FROM Products WHERE quantity < 8 ORDER BY Quantity;
+
