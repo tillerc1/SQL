@@ -1,0 +1,17 @@
+SELECT * 
+FROM superstore
+ORDER by Price;
+--
+SELECT avg(price), category
+FROM superstore
+GROUP by category
+ORDER BY avg(price);
+--
+SELECT min(price), category
+FROM superstore
+WHERE category='Kitchen Supplies';
+--
+SELECT avg(average_rating), category
+FROM superstore
+GROUP by category
+ORDER by avg(average_rating);
