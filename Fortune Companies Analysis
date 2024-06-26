@@ -28,3 +28,7 @@ AND paid_time_off_days>=18
 AND avg_employee_tenure>=5
 ORDER BY paid_time_off_days desc;
 -- Fortune companies that offer Healthcare, PTO >18 Days, average employee tenure >5 years, ordered ascending
+SELECT industry, Round(avg(revenue),2) as avg_revenue
+FROM fortune_companies
+GROUP BY industry;
+-- Average Revnue by industry of Fortune Companies
